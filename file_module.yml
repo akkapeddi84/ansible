@@ -1,0 +1,13 @@
+---
+  - hosts: localhost
+    name: working with file module
+    tasks:
+      - file:
+          dest: /Users/nakkaped/Documents/D/SDM/Ansible/test_dir1 
+          mode: '0775'
+          #owner: root 
+          state: directory
+      - file:
+          dest: /Users/nakkaped/Documents/D/SDM/Ansible/test_dir1/a.txt
+          mode: '0777'
+          state: touch
