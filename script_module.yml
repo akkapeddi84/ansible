@@ -1,0 +1,5 @@
+---
+  - hosts: localhost
+    name: testing to run the shell script
+    tasks:
+      - script: /Users/nakkaped/Documents/D/SDM/Ansible/working_examples/test.sh >> abc1.log
