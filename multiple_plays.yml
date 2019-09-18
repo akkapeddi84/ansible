@@ -11,3 +11,5 @@
    tasks:
     - name: touch command
       command: touch /Users/nakkaped/Documents/D/SDM/Ansible/abc1.txt
+    - name: another touch command
+      command: touch /Users/nakkaped/Documents/D/SDM/Ansible/abc2.txt
