@@ -1,0 +1,13 @@
+---
+ - name: this is the first play 
+   hosts: localhost
+   gather_facts: false
+   tasks:
+    - name: touch command
+      command: touch /Users/nakkaped/Documents/D/SDM/Ansible/abc.txt
+ - name: this is second play 
+   hosts: localhost
+   gather_facts: false
+   tasks:
+    - name: touch command
+      command: touch /Users/nakkaped/Documents/D/SDM/Ansible/abc1.txt
