@@ -1,0 +1,7 @@
+---
+  - hosts: app
+    name: here we are explicity asking to ignore to gather the facts
+    gather_facts: true
+    tasks:
+      - command: whoami
+      
