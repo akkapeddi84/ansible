@@ -1,0 +1,9 @@
+---
+  - hosts: localhost
+    name: this is second example
+    vars: 
+      my_content: "this is my second var testing"
+    tasks:
+      - copy:
+          dest: /Users/nakkaped/Documents/D/SDM/Ansible/abc.txt
+          content: "{{ my_content }}"
