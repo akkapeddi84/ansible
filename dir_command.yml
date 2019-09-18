@@ -1,0 +1,13 @@
+---
+  - hosts: localhost
+    name: creating the directory and zipping 
+    tasks:
+      - command: mkdir /Users/nakkaped/Documents/D/SDM/Ansible/test_dir 
+      - command: mv /Users/nakkaped/Documents/D/SDM/Ansible/abc.txt /Users/nakkaped/Documents/D/SDM/Ansible/test_dir
+      - archive:
+          path: /Users/nakkaped/Documents/D/SDM/Ansible/test_dir
+          dest: /Users/nakkaped/Documents/D/SDM/Ansible/test_dir.zip
+          format: zip
+          mode: '0644'
+          remove: yes
+      
