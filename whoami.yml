@@ -1,6 +1,6 @@
 ---
   - hosts: app
-    name: here we are explicity asking to ignore to gather the facts
+    name: this playbook will gather the facts of the remote server and runs the command
     gather_facts: true
     tasks:
       - command: whoami
