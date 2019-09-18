@@ -1,0 +1,9 @@
+---
+  - hosts: localhost
+    name: Change the working directory to somedir/ before executing the command.
+    gather_facts: false
+    tasks:
+      - script: test1.sh >> abc.log
+        args: 
+          chdir: /Users/nakkaped/Documents/D/SDM/Ansible/working_examples
+          
